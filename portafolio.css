@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #063A69;
+    padding: 1rem;
+    color: #fff;
+    height: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul li{
+    margin: 20px;
+}
+nav ul li:hover{
+    /* border-top: #fff 2px solid; */
+    border-bottom: #fff 2px solid;
+    transform: 2s ease all in;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-variant: bold;
+}
+
+.persona{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.introduccion{
+    margin: auto;
+    text-align: center;
+}
+.introduccion h1{
+    margin-bottom:10px ;
+}
+.introduccion p{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.contra-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF; 
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contra-button:hover {
+    background-color: #0056b3; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.contra-button:active {
+    background-color: #00408d; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+.persona img{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    margin: auto;
+}
+
+.projects {
+    background-color: #063A69;
+    padding: 2rem;
+}
+
+.projects h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.proyecto-template {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;   
+    overflow: hidden;
+}
+.proyecto-card {
+    background-color: #e0e0e0;
+    width: 30%;
+    height: 200px;
+    border-radius: 25px;
+
+}
+
+.contact {
+    background-color: #ffffff;
+    color: #ffff;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.informacion{
+    width: 50%;
+    padding: 3%;
+    background-color: #3369ce;
+}
+.informacion h2{
+    text-align: center;
+    margin: 10px;
+}
+.informacion p  {
+    margin-top:3rem;
+    margin-left: 10px;
+
+    padding-bottom: 20px;
+   font-size: 20px;
+}
+.informacion i{
+    display: inline-block;
+}
+.informacion p .icono_awesome{
+    font-size: 50px;
+    margin-right: 20px;
+}
+.informacion .social-media{
+    padding-top: 20px;
+}
+.social-media .icono_awesome{
+    font-size: 30px;
+}
+.formulario{
+    width: 50%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+}
+.formulario h2{
+    margin: 5px;
+    text-align: center;
+    color: #ffff;
+}
+.formulario label{
+font-family:Montserrat ;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contact-form input,.contact-form textarea {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 2rem;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Montserrat;
+    text-align: center;
+    resize: none;
+    box-sizing: none;
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+}
+input.filled {
+    background-color: #d1ffd6;
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #00254a;
+    color: #fff;
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    /* background-color: #004080; */
+    background-image: linear-gradient(to bottom right, #12a234, #f6f648);
+}
+
+.arriba_boton{
+font-size: 20px;
+}
+
+#scrollBoton {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    background-color: #ffff;
+    color: white;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#scrollBoton:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+
+footer {
+    background-color: #00254a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

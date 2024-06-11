@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portafolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./portafolio.js" defer></script>
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <nav >
+           <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#proyectos">PROYECTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <section id="incio" class="persona">
+        <div class="introduccion">
+            <h1>Soy Jhan Paul Bejarano</h1>
+            <p>Desarrollador Fullstack | Java Developer</p>
+            <a href="./Imagenes/Cuarta Entrega  Cv Jhan Paul Bejarano Herrera.pdf" download="Cv_Jhan_Paul_Bejarano_Herrera.pdf">
+            <button class="contra-button">Contrátame</button>
+            </a>
+        </div>
+        <img src="./Imagenes/imagen jhan port.webp" alt="imagen-Jhan-Animado">
+    </section>
+
+    <section id="proyectos" class="projects">
+        <h2>Proyectos</h2>
+        <div class="proyecto-template">
+            <div class="proyecto-card"></div>
+            <div class="proyecto-card"></div>
+            <div class="proyecto-card"></div>
+        </div>
+    </section>
+
+    <!----formulario-->
+    <section id="contacto" class="contact">
+        <div class="informacion">
+        <h2>Encuéntrame en redes sociales</h2>
+            <p><i class="fa-regular fa-envelope icono_awesome" style="color: #000000;"></i>Email: <a href="mailto:jhanpaulbejaranoh@gmail.com">jhanpaulbejaranoh@gmail.com</a></p>
+            <p><i class="fa-solid fa-map-location-dot  icono_awesome" style="color: #000000;"></i> Ubicación: Colombia</p>
+            <p><i class="fa-solid fa-phone  icono_awesome" style="color: #000000 ; "></i> Teléfono: +51 311-650-7645</p>
+            <p>Escríbeme:</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook icono_awesome" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram icono_awesome" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icono_awesome" style="color: #000000;"></i></a>
+                <a href="https://github.com/Jhan-Paul11"><i class="fa-brands fa-github icono_awesome" style="color: #000000;"></i></a>
+            </div>
+        </div>
+        <div class="formulario">
+            <h2>Formulario de Contacto</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" class="input-field" oninput="verificarLlenadoFormulario(this)">
+            <label for="email">Correo</label>
+            <input type="email" name="email" placeholder="Email" class="input-field" oninput="verificarLlenadoFormulario(this)">
+            <label for="name">Telefono</label>
+            <input type="tel" name="phone" placeholder="Teléfono" class="input-field" oninput="verificarLlenadoFormulario(this)">
+            <label for="name">Mensaje</label>
+            <textarea name="message" placeholder="Como te puedo ayudar" class="input-field" oninput="verificarLlenadoFormulario(this)"></textarea>
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+    </section>
+
+
+    <button id="scrollBoton" title="ir arriba">
+        <i class="fa-solid fa-arrow-up arriba_boton" style="color: #00254a;"></i>
+    </button>
+
+    <footer>
+        <p>Copyright &copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
